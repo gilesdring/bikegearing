@@ -26,7 +26,8 @@ void drawFrame(float wheelSize, float wheelBase) {
   strokeWeight(20);
   noFill();
 
-  stroke(0); 
+  stroke(255);
+  
   beginShape();
   vertex(wheelBase, wheelSize/2);
   quadraticVertex(wheelBase-100,wheelSize/2+100,wheelBase-120,wheelSize/2+200);
@@ -35,7 +36,7 @@ void drawFrame(float wheelSize, float wheelBase) {
   bezierVertex(wheelBase+30, wheelSize+175, wheelBase+30, wheelSize+25, wheelBase-100, wheelSize+25);  
   endShape();
 
-  stroke(255,0,0);
+//  stroke(255,0,0);
   beginShape();
   vertex(0,wheelSize/2);
   vertex(wheelSize/2+100, wheelSize/2-40);
@@ -49,7 +50,7 @@ void drawFrame(float wheelSize, float wheelBase) {
   vertex(wheelSize/2-150,wheelSize+250);
   endShape();
   
-  stroke(0);
+//  stroke(0);
   beginShape();
   vertex(wheelSize/2-220,wheelSize+275);
   bezierVertex(wheelSize/2-150,wheelSize+250,wheelSize/2-80,wheelSize+280,wheelSize/2-50,wheelSize+240);
